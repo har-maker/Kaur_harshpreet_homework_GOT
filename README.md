@@ -1,6 +1,6 @@
 # GOT DOM TRAVEL 
 
-![readme](/images/greyjoy.jpg)
+![readme](/images/GOT_sprites.png)
 
 ## Information description of GOT assignment
 
