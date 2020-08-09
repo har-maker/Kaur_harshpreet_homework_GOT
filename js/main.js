@@ -1,3 +1,4 @@
+
 (()=>{
 
 let sigilButtons = document.querySelectorAll(".sigilContainer"),
@@ -5,6 +6,8 @@ let sigilButtons = document.querySelectorAll(".sigilContainer"),
     closeButton = lightbox.querySelector(".close"),
     currentHouseName = document.querySelector("h1"),
     // video = lightbox.querySelector(".startVideo"),
+    imageCon = document.querySelector("#houseImages"),
+    houseInfo = document.querySelector(".house-info"),
     customButtons = document.querySelectorAll(".videoControls img");
 
 const houseData = [
@@ -53,7 +56,19 @@ function animateBanners()
 
 
 // change the text
+function changeText()
+{
+  currentHouseName.textContent = `House ${houseData[arrayData][0]}`;
+  console.log(currentHouseName.textContent);
+  houseInfo.textContent = `${houseData[arrayData][1]}`;
 
+  setTimeout(function()
+  {
+    lightbox.classList.add("show-lightbox");
+    video.src = targetSource;
+  }, 
+600);
+}
 
 
 
