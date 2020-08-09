@@ -144,7 +144,11 @@ h1 {
 
 
 .close:hover {
+<<<<<<< HEAD
   background-color: grey;
+=======
+  background-color: #FFC559;
+>>>>>>> 353884a2887717b115ed329090549180d25942a7
 
 }
 
